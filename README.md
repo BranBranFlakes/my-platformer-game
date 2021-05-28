@@ -1,4 +1,3 @@
-# my-platformer-game
 
 ## Goal
 
