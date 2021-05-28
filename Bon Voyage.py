@@ -138,7 +138,7 @@ class Hero(pygame.sprite.Sprite):
         self.vy = 0
         self.walk = 0
 
-        self.hearts = 3
+        self.hearts = 100
         self.hurt_timer = 0
     
         self.reached_goal = False
@@ -791,7 +791,7 @@ class Game():
                 self.advance()
             
     def render(self):
-        self.level.active.fill([0, 0, 0, 0]) # Transparent so background shows through
+        self.level.active.fill([0, 0, 0, 0])
         self.active_sprites.draw(self.level.active)
 
         offset_x, offset_y = self.calculate_offset()
